@@ -37,4 +37,5 @@ form.addEventListener('submit', e => {
     if (i === promiseAmount - 1)
       setTimeout(() => startBtn.removeAttribute('disabled'), promiseDelay);
   }
+  e.currentTarget.reset();
 });

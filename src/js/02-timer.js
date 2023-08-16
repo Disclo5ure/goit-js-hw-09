@@ -35,7 +35,7 @@ const addLeadingZero = str => str.padStart(2, '0');
 
 const changeTimeUI = timeLeft => {
   const timeLeftSeparated = convertMs(timeLeft);
-  for (i in timeLeftSeparated) {
+  for (let i in timeLeftSeparated) {
     timeLeftSeparated[i] = addLeadingZero(timeLeftSeparated[i].toString());
   }
   days.textContent = timeLeftSeparated.days;
